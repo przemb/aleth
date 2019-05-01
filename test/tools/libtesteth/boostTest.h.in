@@ -1,0 +1,4 @@
+#pragma once
+#include <string>
+
+std::string boost_all_unit_tests = "@allTests@";

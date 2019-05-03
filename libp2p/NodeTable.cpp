@@ -592,7 +592,7 @@ shared_ptr<NodeEntry> NodeTable::handleNeighbours(
     });
     if (!expected)
     {
-        cnetdetails << "Dropping unsolicited neighbours packet from " << _from.address();
+        LOG(m_logger) << "Dropping unsolicited neighbours packet from " << _from.address();
         return sourceNodeEntry;
     }
 

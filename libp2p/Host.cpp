@@ -673,7 +673,7 @@ void Host::connect(shared_ptr<Peer> const& _p)
         }
         else
         {
-            cnetdetails << "Connecting to " << _p->id << "@" << ep;
+            cnetdetails << "Initializing RLPX handshake with " << _p->id << "@" << ep;
             auto handshake = make_shared<RLPXHandshake>(this, socket, _p->id);
             {
                 Guard l(x_connecting);
